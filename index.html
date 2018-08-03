@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Flaming Entertainment Santo is a small but firey video game developer."/>
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/nav.css"/>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="assets/js/wizard.js"></script>
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Flaming Entertainment">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://flamingent.com">
+	<meta property="og:site_name" content="Flaming Entertainment - Main site">
+	<meta property="og:description" content="Flaming Entertainment is a small but firey video game developer"/>
+
+	<title>Flaming Entertainment</title>
+	
+	<!-- CSS Nullify -->
+	<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+	</style>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/foundation/foundation-icons.css"/>
+</head>
+
+<body class="index">	
+	<!-- navigation bar -->
+	<ul class="navbar-top">
+		<li id="nav-company"><a href="http://www.flamingent.com"><strong>Flaming Ent</strong></a></li>
+		<li id="nav-review"><a href="https://flamingent.com/cake"><strong><span class="collapse">Cake</span><span class="reveal">Engine</span></strong></a></li>
+		<li id="nav-github"><a href="http://github.com/flamingent"><strong><span class="collapse">Source </span>Code</strong></a></li>
+		<li id="nav-blog"><a href="http://blog.flamingent.com"><strong><span class="collapse">Development </span>Blog</strong></a></li>
+		<li id="nav-game"><a href="http://www.flamingent.com/trigger"><strong>Trigger</strong></a></li>
+	</ul>
+	<script>document.getElementById("nav-company").className += " current";</script>
+	
+	<!-- overlay -->
+	<div class="overlay" id="background-container"></div>
+	
+	<!-- main page -->
+	<div class="page">
+		<!-- logo -->
+		<div class="reset" id="wordmark"><a href="https://www.flamingent.com/">Flaming Entertainment</a></div>
+
+		<!-- welcome heading -->
+		<h2 class="welcome">Flaming Entertainment is a small but firey video game studio.<br/>We are working on <strong><a href="http://www.flamingent.com/trigger">Trigger</a></strong> on a custom id Tech based engine called <strong><a href="http://www.flamingent.com/cake">Cake</a></strong>.</h2>
+	
+		<!-- link selections -->
+		<!--
+		<ul class="linklist background-selector">
+			<li>
+				<a href="http://www.flamingent.com/trigger" data-image="assets/css/img/background-triger.jpg">
+					<div class="linkimage" style="background-image: url(assets/css/img/thumb-trigger.jpg)">Trigger</div>
+					<span class="linktitle"><strong>Trigger</strong></span>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.flamingent.com/cake" data-image="assets/css/img/background-cake.jpg">
+					<div class="linkimage" style="background-image: url(assets/css/img/thumb-cake.jpg)">Cake</div>
+					<span class="linktitle"><strong>Cake</strong></span>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.flamingent.com/blog" data-image="assets/css/img/background-devblog.jpg">
+					<div class="linkimage" style="background-image: url(assets/css/img/thumb-devblog.jpg)">Development Blog</div>
+					<span class="linktitle"><strong>Development Blog</strong></span>
+				</a>
+			</li>
+		</ul>
+		-->
+
+		<!-- bottom info bar -->
+		<ul class="infobar">
+			<li>
+				<a href="about.html">About Flaming Entertainment</a>
+			</li>
+			<li>
+				<a href="presskit/">Presskit</a>
+			</li>
+			<li>
+				<span class="socialicons">
+					<a href="http://facebook.com/FlamingEntGames">
+						<i class="fi-social-facebook facebook"></i>
+					</a>
+				</span>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- scripts to control background color switching -->
+	<script src="assets/js/jquery.color.js"></script>
+	<script>var ie8 = false;</script>
+	<!--[if lte IE 8]>
+	    <script>ie8 = true;</script>
+	<![endif]-->
+	<script>
+		if (!ie8) {
+			var wizardCount = 0;
+			jQuery.Color.hook( "fill" );
+			$(function(){
+
+				// DEFINE LIST OF ITEMS TO COLOR CYCLE
+				var hues = ["#046c36", "#6c5b04", "#ad4200"];
+				var $wizardsColors = $("h2, .page a, .strapline");
+				var $wizardsBorders = $(".infobar li");
+				var $wizardsBackgrounds = $("h1.wordmark, ul.navbar-top li.current a");
+				var $wizardsOpposite = $(".linkimage.updated");
+				var $wizardsFills = $("svg.wordmark path, #wordmark path");
+				var elements = [
+					[ $wizardsColors, "color" ],
+					[ $wizardsBorders, "border-color" ],
+					[ $wizardsBackgrounds, "background-color" ],
+					[ $wizardsFills, "fill" ]
+				];
+				var xElements = [
+					[ $wizardsOpposite, "background-color" ]
+				];
+				
+				// GENERATE ARRAY AND DIVS OF BACKGROUND IMAGES 
+				$(".background-selector li a").each(function(index){
+					var currentIndex = ++index;
+					var currentImage = $(this).data("index", currentIndex).data("image");
+ 					$("#background-container").append($(document.createElement("div")).css("backgroundImage", "url(" + currentImage + ")").attr("id", ("image" + currentIndex)).addClass("overlay background"));
+				});
+				var currentSelection = 0;
+				var imageSelected = false;
+
+				// SELECT CORRECT BACKGROUND IMAGE
+				$(".background-selector li a").mouseenter(function(){
+					var newSelection = $(this).data("index");
+					if (newSelection > 0 && newSelection !== currentSelection) {
+						currentSelection = newSelection;
+						$(".overlay.background").stop(true);
+						$(".overlay.screen-container").fadeTo(300, 0.9);
+						$("#image" + newSelection).fadeTo(0,0).appendTo("#background-container").fadeTo(400,1);
+						if(!imageSelected) {
+							imageSelected = true;
+							$wizardsFills.stop(true).animate({fill: "#fff"}, 400);
+							$wizardsColors.stop(true).animate({color: "#fff"}, 400);
+							$wizardsBorders.stop(true).animate({borderColor: "#fff"}, 400);
+							$wizardsBackgrounds.stop(true).animate({backgroundColor: "#fff"}, 400);
+							$("ul.navbar-top li.current a").css("color", "#000");
+						}
+					}
+				});
+
+				// HIT RESET
+				$(".reset").mouseenter(function(){
+					if (currentSelection > 0) {
+						currentSelection = 0;
+						$(".overlay.background").stop(true, true).fadeTo(300,0);
+						$(".overlay.screen-container").fadeTo(300,1);
+						if(imageSelected) {
+							imageSelected = false;
+							$wizardsFills.stop(true).animate({fill: hues[hues.length-1]}, 100);
+							$wizardsBorders.stop(true).animate({borderColor: hues[hues.length-1]}, 100);
+							$wizardsBackgrounds.stop(true).animate({backgroundColor: hues[hues.length-1]}, 100);
+							$wizardsColors.stop(true).animate({color: hues[hues.length-1]}, 100);
+							wizard(elements, hues, 15000);
+							$("ul.navbar-top li.current a").css("color", "#fff");
+						}
+					}
+				});
+
+				// COLOR CYCLE INITIATION
+				wizard(elements, hues, 15000);
+			});
+		}
+	</script>
+	
+	<!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6676785-5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-6676785-5');
+	</script>
+
+</body>
+
+</html>

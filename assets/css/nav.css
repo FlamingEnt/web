@@ -1,0 +1,135 @@
+ul.navbar-top .reveal {
+	display: none;
+}
+ul.navbar-top .collapse {
+	display: inline;
+}
+
+ul.navbar-top a {
+	text-decoration: none;
+}
+ul.navbar-top {
+	position: relative;
+	z-index: 99999;
+	width: 100%;
+	text-align: left;
+	font-size: 0;
+	line-height: 0;
+	font-family: "futura-pt";
+	padding: 0;
+}
+.fwswitch ul.navbar-top {
+	box-shadow: 0 0px 15px 0px #2c2819e3;
+}
+
+ul.navbar-top b, ul.navbar-top strong, ul.navbar-top b *, ul.navbar-top strong * {
+	font-weight: 700;
+}
+ul.navbar-top:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ul.navbar-top li, ul.navbar-top a {
+	display: inline-block;
+}
+
+ul.navbar-top li {
+	float: right;
+}
+
+ul.navbar-top li#nav-company {
+	float: left;
+}
+ul.navbar-top li#nav-company a {
+	font-size: 18px;
+	line-height: 14px;
+}
+
+ul.navbar-top, ul.navbar-top a {
+	background-color: #000;
+}
+
+ul.navbar-top a {
+	color: #F3F1E9;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.index ul.navbar-top a {
+	color: #F3F1E9;
+}
+
+ul.navbar-top li.current a, ul.navbar-top li.current a:hover {
+	background-color: #F3F1E9;
+	color: #000;
+}
+.index ul.navbar-top li.current a, .index ul.navbar-top li.current a:hover {
+	background-color: #000;
+	color: #F3F1E9;
+}
+
+ul.navbar-top a:hover {
+	background-color: #44433E;
+	text-decoration: none;
+	border: 0;
+}
+
+@media only screen and (max-width: 880px) {
+	ul.navbar-top .reveal {
+		display: inline;
+	}
+	ul.navbar-top .collapse {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	ul.navbar-top a {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	ul.navbar-top #nav-company a {
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	ul.navbar-top b, ul.navbar-top strong, ul.navbar-top b *, ul.navbar-top strong * {
+		font-weight: 700;
+	}
+	ul.navbar-top a {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	body {
+		padding-bottom: 250px !important;
+	}
+	ul.navbar-top li, ul.navbar-top li#nav-company {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	ul.navbar-top a {
+		float: none;
+		display: block;
+	}
+	ul.navbar-top {
+		position: absolute;
+		bottom: 0;
+		counter-reset: c 6;
+	}
+
+	ul.navbar-top .reveal {
+		display: none;
+	}
+	ul.navbar-top .collapse {
+		display: inline;
+	}
+}

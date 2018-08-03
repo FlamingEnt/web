@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Flaming Entertainment Santo is a small but firey video game developer."/>
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/nav.css"/>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="assets/js/wizard.js"></script>
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Flaming Entertainment">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://flamingent.com">
+	<meta property="og:site_name" content="Flaming Entertainment - Main site">
+	<meta property="og:description" content="Flaming Entertainment is a small but firey video game developer"/>
+
+	<title>Flaming Entertainment | About</title>
+</head>
+
+<body class="about">
+	<!-- navigation bar -->
+	<ul class="navbar-top">
+		<li id="nav-company"><a href="http://www.flamingent.com"><strong>Flaming Ent</strong></a></li>
+		<li id="nav-review"><a href="https://flamingent.com/cake"><strong><span class="collapse">Cake</span><span class="reveal">Engine</span></strong></a></li>
+		<li id="nav-github"><a href="http://github.com/flamingent"><strong><span class="collapse">Source </span>Code</strong></a></li>
+		<li id="nav-blog"><a href="http://blog.flamingent.com"><strong><span class="collapse">Development </span>Blog</strong></a></li>
+		<li id="nav-game"><a href="http://www.flamingent.com/trigger"><strong>Trigger</strong></a></li>
+	</ul>
+	<script>document.getElementById("nav-company").className += " current";</script>
+
+	<!-- main page -->
+	<div class="maincontain">
+	
+		<!-- logo -->
+		<div class="logooutercontain">
+			<a class="logocontain" href="/">
+				<h1 class="wordmark">
+					Flaming Entertainment
+				</h1>
+			</a>
+		</div>
+
+		<!-- about header -->
+		<h1 class="subhead">About</h1>
+			<div id="static">
+				<!-- about blurb -->
+				<div class="post text">					
+				<p>Flaming Entertainment is a small but firey game developer. We set out to make games about interesting people in fascinating places. We are currently working on our first game.</p>
+				</div>
+
+				<!-- about peeps -->
+				<div class="post text">
+					 <div class="dateline">Patrick Raynor</div>
+					 <p>is founder and current all seeing creative director and technologist.</p>
+				</div>
+				
+ 			</div>
+
+		<p id="footer">
+			
+		</p>
+	</div>
+	
+	<!-- scripts to control background color switching -->
+    <script>
+    	$(function(){
+			var hues = ["#046c36", "#6c5b04", "#ad4200"];
+			var elements = [
+				[ $("a.logocontain"), "backgroundColor" ],
+				[ $(".post p a, .post a.dateline"), "color" ]
+			];
+			wizard(elements, hues, 15000);
+		});
+    </script>
+	
+	<!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6676785-5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-6676785-5');
+	</script>
+</body>
+
+</html>

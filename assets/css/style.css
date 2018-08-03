@@ -1,0 +1,276 @@
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+strong {
+	font-weight: 700;
+}
+
+body {
+	background-color: #f3f1e9;
+	text-align: center;
+	padding-bottom: 100px;
+	font-family: "futura-pt", Futura, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	position: relative;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+	.background {
+		background-size: cover;
+		background-color: transparent;
+		opacity: 0;
+	}
+	.screen {
+		opacity: 1;
+		background-color: #000;
+	}
+
+.page {
+	z-index: 9999;
+	position: relative;
+	top: 50px;
+}
+
+#wordmark {
+	width: 293px;
+	height: 156px;
+	margin: 0 auto;
+	position: relative;
+}
+	#wordmark a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-indent: -9999px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#wordmark svg {
+		left: 0 !important;
+	}
+
+h1.wordmark {
+	text-indent: -9999px;
+	width: 293px;
+	height: 156px;
+	background-repeat: no-repeat;
+	
+	display: block;
+	margin: 0 auto;
+	-webkit-mask-image: url(imgs/logo.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 293px 156px;
+}
+	h1.wordmark a {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+	GARBAGE h1.wordmark {
+		background-image: url(imgs/logo@2x.png);
+		background-size: 293px 156px;
+		width: 293px;
+		height: 156px;
+		background-repeat: no-repeat;
+	}
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 400;
+}
+.welcome {
+	margin-top: 50px;
+	margin-bottom: 75px;
+}
+
+.linklist {
+	max-width: 100%;
+	margin: 20px auto;
+}
+.linklist li {
+	display: inline-block;
+	max-width: 240px;
+	margin: 0 45px 35px;
+}
+	.linkimage {
+		display: block;
+		width: 220px;
+		height: 220px;
+		background-color: transparent;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		behavior: url(pie/PIE.htc);
+		text-indent: -9999px;
+		margin-bottom: 15px;
+		box-shadow: inset 0 0 0 0px #fff;
+		-webkit-transition: box-shadow 0.1s;
+		-moz-transition: box-shadow 0.1s;
+		-o-transition: box-shadow 0.1s;
+		transition: box-shadow 0.1s;
+		overflow: hidden;
+		position: relative;
+	}
+	.linkimage.updated {
+		box-shadow: none;
+	}
+	.linktitle {
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+
+	a:hover .linkimage {
+		box-shadow: inset 0 0 0 15px #fff;
+	}
+	a:hover .linkimage.updated {
+		box-shadow: none;
+	}
+		.linkimage img {
+			display: block;
+			position: relative;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			width: 240px;
+			height: 240px;
+			top: 0;
+			left: 0;
+			-webkit-transition: all 0.1s ease-out;
+			-moz-transition: all 0.1s ease-out;
+			-o-transition: all 0.1s ease-out;
+			transition: all 0.1s ease-out;
+		}
+
+
+.infobar {
+	margin: 65px auto 35px;
+	max-width: 700px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.infobar li {
+	display: inline-block;
+	padding: 0px 12px;
+	border-left: 1px solid #fff;
+	list-style: none;
+	height: 11px;
+	line-height: 11px;
+}
+	.infobar a:hover {
+		text-decoration: underline;
+	}
+	.infobar li:first-child {
+		border-left: none;
+	}
+	.socialicons {
+		vertical-align: -11px;
+	}
+	.socialicons i {
+		font-size: 24px;
+	}
+		.socialicons a:hover {
+			text-decoration: none;
+		}
+	.infobar .facebook {
+		width: 18px;
+		height: 15px;
+		position: relative;
+		top: -8px;
+		margin-right: 4px;
+		margin-left: 3px;
+	}
+	.infobar .email {
+		width: 20px;
+		height: 12px;
+		margin-left: 7px;
+		position: relative;
+		top: -6px;
+	}
+
+
+
+
+@media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	body {
+		width: 100%;
+		/*max-width: 480px;*/
+	}
+	.linklist {
+		max-width: 480px;
+	}
+	.linklist li {
+		display: block;
+		margin: 0 auto 35px;
+	}
+	h2 {
+		display: block;
+		line-height: 26px;
+		max-height: 99999999px;
+	}
+	h2, .linktitle, .infobar li {
+		font-size: 18px;
+	}
+	.infobar li {
+		display: block;
+		margin: 10px 0;
+		height: auto;
+		border: none;
+	}
+	.socialicons i {
+		font-size: 36px;
+	}
+	.socialicons {
+		display: block;
+		margin-bottom: -3px;
+		margin-top: 20px;
+	}
+	#signup .strapline {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.linklist {
+		max-width: 700px;
+	}
+}
+
+@media (min-width: 480px) {
+	.linklist {
+		max-width: 600px;
+	}
+}
+@media (min-width: 970px) {
+	.linklist {
+		max-width: 900px;
+	}
+}
+@media (min-width: 1590px) {
+	.linklist {
+		max-width: 100%;
+	}
+}
+
