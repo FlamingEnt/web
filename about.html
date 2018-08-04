@@ -30,13 +30,16 @@
 		<li id="nav-game"><a href="http://www.flamingent.com/trigger"><strong>Trigger</strong></a></li>
 	</ul>
 	<script>document.getElementById("nav-company").className += " current";</script>
-
+			
+	<!-- overlay -->
+	<div class="overlay" id="background-container"></div>
+	
 	<!-- main page -->
 	<div class="maincontain">
 	
 		<!-- logo -->
 		<div class="logooutercontain">
-			<a class="logocontain" href="/">
+			<a class="logocontain" href="index.html">
 				<h1 class="wordmark">
 					Flaming Entertainment
 				</h1>
@@ -69,7 +72,7 @@
     	$(function(){
 			var hues = ["#046c36", "#6c5b04", "#ad4200"];
 			var elements = [
-				[ $("a.logocontain"), "backgroundColor" ],
+				[ $("body"), "backgroundColor" ],
 				[ $(".post p a, .post a.dateline"), "color" ]
 			];
 			wizard(elements, hues, 15000);
