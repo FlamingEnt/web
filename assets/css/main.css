@@ -4,33 +4,15 @@ body {
 }
 
 h1.wordmark {
-	background-size: 400px 217px;
+	background-size: 400px 582px;
 	width: 400px;
-	height: 217px;
+	height: 582px;
 	background-repeat: no-repeat;
-	background-image: url(imgs/logoreverse.png);
+	background-image: url(imgs/logo.png);
 }
 h1.wordmark.splash {
 	background-image: url(imgs/logo.png);
 	margin-top: -30px;
-}
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5) {
-
-	h1.wordmark {
-		background: url(imgs/logoreverse@2x.png) no-repeat;
-		background-size: 400px 217px;
-		width: 400px;
-		height: 217px;
-		background-repeat: no-repeat;
-	}
-    h1.wordmark.splash {
-        background-image: url(imgs/logo@2x.png);
-        background-size: 400px 217px;
-        background-repeat: no-repeat;
-    }   
 }
 
 /* COMMON STYLES */
@@ -40,7 +22,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 .logocontain {
 	width: 400px;
-	height: 217px;
+	height: 582px;
 	margin: 0 auto;
 	text-indent: -9999px;
 	direction: ltr;
@@ -59,55 +41,6 @@ a, a:visited {
 
 
 /* SPLASH PAGE */
-
-html.splash {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	display: table;
-}
-body.splash {
-	background-color: #ad4200;
-	color: #fff;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	display: table-cell;
-	vertical-align: middle;
-}
-body.splash a:hover {
-	text-decoration: underline;
-	color: inherit;
-}
-.splashcontain {
-	width: 400px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.logocontain.splash {
-	background-color: transparent;
-}
-
-h2#about.splash {
-	display: block;
-	width: 300px;
-	margin: 58px auto 0 auto;
-	font-family: "Futura-PT", sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 1px;
-}
-h3#staff.splash {
-	width: 250px;
-	margin: 20px auto 45px auto;
-	font-family: Georgia, serif;
-	font-size: 14px;
-	font-style: italic;
-	font-weight: normal;
-}
 
 #linklist {
 	font-family: "Futura-PT", sans-serif;
@@ -154,11 +87,6 @@ body {
 	font-family: Georgia, serif;
 }
 
-
-.logocontain {
-	background-color: #ad4200;
-}
-
 h1.subhead {
 	text-align: center;
 	text-transform: uppercase;
@@ -174,7 +102,7 @@ h1.subhead {
 	line-height: 1.6em;
 	margin-top: 30px;
 	padding-top: 25px;
-	background-image: url(//static.tumblr.com/busda5t/fYymtayci/divider.png);
+	background-image: url(imgs/divider.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }

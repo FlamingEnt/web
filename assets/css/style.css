@@ -43,8 +43,8 @@ body {
 }
 
 #wordmark {
-	width: 293px;
-	height: 156px;
+	width: 280px;
+	height: 407px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -56,42 +56,28 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-	}
-	#wordmark svg {
-		left: 0 !important;
+		
+		background-repeat: no-repeat;
+		background-image: url(imgs/logo.png);
+		background-size: 280px 407px;
 	}
 
 h1.wordmark {
 	text-indent: -9999px;
-	width: 293px;
-	height: 156px;
+	width: 280px;
+	height: 407px;
 	background-repeat: no-repeat;
-	
+	background-image: url(imgs/logo.png);
+	background-size: 280px 407px;
+		
 	display: block;
 	margin: 0 auto;
-	-webkit-mask-image: url(imgs/logo.svg);
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-size: 293px 156px;
 }
 	h1.wordmark a {
 		display: block;
 		height: 100%;
 		width: 100%;
 	}
-
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5) {
-
-	GARBAGE h1.wordmark {
-		background-image: url(imgs/logo@2x.png);
-		background-size: 293px 156px;
-		width: 293px;
-		height: 156px;
-		background-repeat: no-repeat;
-	}
-}
 
 h2 {
 	font-size: 30px;
@@ -191,9 +177,9 @@ h2 {
 	.socialicons i {
 		font-size: 24px;
 	}
-		.socialicons a:hover {
-			text-decoration: none;
-		}
+	.socialicons a:hover {
+		text-decoration: none;
+	}
 	.infobar .facebook {
 		width: 18px;
 		height: 15px;
@@ -207,7 +193,7 @@ h2 {
 		height: 12px;
 		margin-left: 7px;
 		position: relative;
-		top: -6px;
+		top: -8px;
 	}
 
 
@@ -246,9 +232,6 @@ h2 {
 		display: block;
 		margin-bottom: -3px;
 		margin-top: 20px;
-	}
-	#signup .strapline {
-		margin-bottom: 15px;
 	}
 }
 
