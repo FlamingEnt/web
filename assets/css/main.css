@@ -17,6 +17,20 @@ h1.wordmark.splash {
 
 /* COMMON STYLES */
 
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 66%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 .logooutercontain {
 	padding-right: 30px;
 }
@@ -27,6 +41,14 @@ h1.wordmark.splash {
 	text-indent: -9999px;
 	direction: ltr;
 	display: block;
+}
+
+.cakelogo {
+	background-image: url(imgs/cake_logo.png);
+	background-repeat: no-repeat;
+	background-size: 420px 530px;
+	width: 550px;
+	height: 480px;
 }
 
 a, a:visited {
@@ -88,6 +110,23 @@ div#static .post p {
 	text-indent: 0;
 }
 
+/* BOXES */
+
+.box {
+	font-family: sans-serif; color: #fff; font-size: 1.4em;
+	max-width: 700px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	border-radius: 16px;
+	padding: 30px;
+	background-color: rgba(18, 12, 23, 0.9);
+	color: #aaa;
+}
+
+.box a img { border: solid 1px #111; }
+.box a:hover img { border: solid 1px #678bc6; }
 
 /* BLOG */
 
