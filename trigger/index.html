@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Flaming Entertainment Santo is a small but firey video game developer."/>
+	<link type="text/css" rel="stylesheet" href="../assets/css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="../assets/css/nav.css"/>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="../assets/js/wizard.js"></script>
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Flaming Entertainment">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://flamingent.com">
+	<meta property="og:site_name" content="Flaming Entertainment - Main site">
+	<meta property="og:description" content="Flaming Entertainment is a small but firey video game developer"/>
+
+	<title>Flaming Entertainment | Trigger</title>
+</head>
+
+<body class="cake">
+	<!-- navigation bar -->
+	<ul class="navbar-top">
+		<li id="nav-company"><a href="http://www.flamingent.com"><strong>Flaming Ent</strong></a></li>
+		<li id="nav-review"><a href="https://flamingent.com/cake"><strong><span class="collapse">Cake</span><span class="reveal">Engine</span></strong></a></li>
+		<li id="nav-github"><a href="http://github.com/flamingent"><strong><span class="collapse">Source </span>Code</strong></a></li>
+		<li id="nav-blog"><a href="http://blog.flamingent.com"><strong><span class="collapse">Development </span>Blog</strong></a></li>
+		<li id="nav-game"><a href="http://www.flamingent.com/trigger"><strong>Trigger</strong></a></li>
+	</ul>
+	<script>document.getElementById("nav-game").className += " current";</script>
+
+	<!-- overlay -->
+	<div class="overlay" id="background-container"></div>
+
+	<!-- logo -->
+	<div class="logocontain">
+		<div class="cakelogo"></div>
+	</div>
+
+	<!-- blurb -->
+	<div class="box info" id="blurb">
+		<h2>Where the sanest place is behind one.</h2>
+		<p>Trigger is a sci-fi first person shooter in development for Windows, Mac, and Linux. Powered by Cake.</p>
+		<h3>Coming soon.</h3>
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		&copy; AresLabs, LLC dba Flaming Entertainment 2013-2018 &nbsp; &nbsp;</a>
+	</div>
+
+	<!-- scripts to control background color switching -->
+    <script>
+    	$(function(){
+			var hues = ["#046c36", "#6c5b04", "#ad4200"];
+			var elements = [
+				[ $("body"), "backgroundColor" ],
+				[ $(".post p a, .post a.dateline"), "color" ]
+			];
+			wizard(elements, hues, 15000);
+		});
+    </script>
+	
+	<!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6676785-5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-6676785-5');
+	</script>
+</body>
+
+</html>
