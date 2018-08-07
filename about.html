@@ -7,8 +7,6 @@
 	<link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
 	<link type="text/css" rel="stylesheet" href="assets/css/nav.css"/>
 	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="assets/js/wizard.js"></script>
 
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Flaming Entertainment">
@@ -30,10 +28,7 @@
 		<li id="nav-game"><a href="http://www.flamingent.com/trigger"><strong>Trigger</strong></a></li>
 	</ul>
 	<script>document.getElementById("nav-company").className += " current";</script>
-			
-	<!-- overlay -->
-	<div class="overlay" id="background-container"></div>
-	
+
 	<!-- main page -->
 	<div class="maincontain">
 	
@@ -66,18 +61,6 @@
 	<div class="footer">
 		&copy; AresLabs, LLC dba Flaming Entertainment 2013-2018 &nbsp; &nbsp;</a>
 	</div>
-	
-	<!-- scripts to control background color switching -->
-    <script>
-    	$(function(){
-			var hues = ["#046c36", "#6c5b04", "#ad4200"];
-			var elements = [
-				[ $("body"), "backgroundColor" ],
-				[ $(".post p a, .post a.dateline"), "color" ]
-			];
-			wizard(elements, hues, 15000);
-		});
-    </script>
 	
 	<!-- google analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6676785-5"></script>
