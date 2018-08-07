@@ -42,6 +42,14 @@ h1.wordmark.splash {
 	direction: ltr;
 	display: block;
 }
+.logo2contain {
+	width: 322px;
+	height: 80px;
+	margin: 30px auto;
+	text-indent: -9999px;
+	direction: ltr;
+	display: block;
+}
 
 .cakelogo {
 	background-image: url(imgs/cake_logo.png);
@@ -49,6 +57,14 @@ h1.wordmark.splash {
 	background-size: 420px 530px;
 	width: 550px;
 	height: 480px;
+}
+
+.triggerlogo {
+	background-image: url(imgs/trigger.png);
+	background-repeat: no-repeat;
+	background-size: 322px 80px;
+	width: 322px;
+	height: 80px;
 }
 
 a, a:visited {
